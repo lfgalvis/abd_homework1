@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <title>HomeWork1_main_page</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="text-center">
+        Ejercicio e.
+    </h1>
+    <br>
+</div>
+
+<div class="container">
+    <h3 class="text-center">
+        archivos disponibles.
+    </h3>
+    <br>
+    <p>aqui va a estar la lista de archivos disponibles cuando se traigan del server</p>
+</div>
+
+
+<div class="container">
+    <p>seleccione el reto a ejecutar</p>
+    <!--    <input type="text" name="inp_number_1" id="inp_number_1" class="form-control">-->
+    <select class="form-control" id="operator_selector">
+        <option value="1"> reto a</option>
+        <option value="2"> reto b</option>
+        <option value="3"> reto c</option>
+        <option value="3"> reto d</option>
+        <option value="3"> reto e</option>
+        <option value="3"> reto f</option>
+    </select>
+    <p>Numero de palabras</p>
+    <input type="text" name="inp_number_1" id="inp_number_1" class="form-control">
+    <p>Archivos a trabajar, máximo 3</p>
+    <input type="text" name="inp_filename" id="inp_filename" class="form-control">
+    <input type="button" value="enviar" class="btn-success" onclick="llamar_servicio()">
+    <p id="results_from_service"></p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+</body>
+</html>
